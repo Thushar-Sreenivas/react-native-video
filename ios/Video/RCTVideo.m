@@ -1394,7 +1394,7 @@ static int const RCTVideoUnset = -1;
     if (!_playerViewController) {
       _playerViewController = [self createPlayerViewController:_player withPlayerItem:_playerItem];
     }
-     if (@available(iOS 9.0, *)) {
+    if (@available(iOS 9.0, *)) {
       _playerViewController.allowsPictureInPicturePlayback = false;
     }
     // to prevent video from being animated when resizeMode is 'cover'
